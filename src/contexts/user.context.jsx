@@ -18,3 +18,18 @@ export const UserContextProvider = (props) => {
     </UserContext.Provider>
   );
 };
+
+
+//props is the argument passed to the UserContextProvider function.
+// props.children represents any content or components that are wrapped 
+// by <UserContextProvider> when it is used elsewhere in your application.
+
+//<UserContextProvider>
+//<App />
+// </UserContextProvider>
+
+//In this usage, <App /> is considered the props.children of the UserContextProvider component.
+// The content of <App /> will be rendered within the context provided by UserContext.Provider, 
+// and it can access the values like username and setUsername that are defined 
+// in the provider's value.
+

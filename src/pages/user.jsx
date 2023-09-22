@@ -7,7 +7,7 @@ export const User = () => {
   // };
 
   const { usernameState, ageState } = useContext(UserContext);
-  const [username, setUsername] = usernameState;
+  const [username, setUsername] = usernameState; //usernameState[i] was destructured (array)
   const [age, setAge] = ageState;
 
   const handleOnChange = (e) => {
@@ -29,7 +29,7 @@ export const User = () => {
         <p> Selected age is : {age} </p>
       </>
       <>
-      <select onChange={handleOnChange}>
+      <select onChange={handleOnChange}> 
          <option value="the e.target.value thingy"> select age </option>
          {[...Array(200).keys()].slice(18).map((e) => (
            <option key={e} value={e}>
