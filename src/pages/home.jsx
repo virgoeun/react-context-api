@@ -7,6 +7,10 @@ export const Home = () => {
   // const {username} = useContext(UserContext);
   const [username] = usernameState;
   const [age] = ageState;
+  // to access the object's value, []
+  // const username = usernameState[0] // first value
+  // const age = userageState[0]
+
 
 
  

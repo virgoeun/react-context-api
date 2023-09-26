@@ -17,7 +17,8 @@ export const ThemeContextProvider = (props) => {
  //
  //
  return (
-   <ThemeContext.Provider value={multipleValues}>
+   <ThemeContext.Provider value={multipleValues}> 
+   {/* making the multipleValues object available to any child components nested within the ThemeContextProvider */}
      {props.children}
    </ThemeContext.Provider>
  );
